@@ -1,0 +1,545 @@
+{
+  "theme": "light",
+  "project_name": "Gifts da No",
+  "tagline": "Afetos que encantam • Presentes que transformam momentos em memórias",
+  "brand_identity": {
+    "name": "Gifts da No",
+    "logo_url": "https://customer-assets-rejwkqb3.emergentagent.net/job_4549265b-f990-4a2f-a690-f52f74538705/artifacts/0b2c9df89d0ee5ae_WhatsApp%20Image%202026-09-30%20at%2011.13.08.jpeg",
+    "logo_alt": "Gifts da No - Afetos que Encantam",
+    "personality": "Feminino sofisticado, contemporâneo, acolhedor, premium, minimalista com toques artesanais refinados (sem clichês infantis ou excesso de rosa)",
+    "primary_market": "Brasil (BRL R$, parcelamento até 6x sem juros, Pix com 5% de desconto, frete com cálculo de CEP)"
+  },
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#FAF8F5",
+        "on_bg": "#1E242B",
+        "on_bg_muted": "#5C6470",
+        "roles": {
+          "link": "#0F1E36",
+          "error": "#B91C1C",
+          "success": "#15803D",
+          "accent_highlight": "#B87D7B"
+        }
+      },
+      {
+        "name": "panel",
+        "kind": "solid",
+        "bg": "#FFFFFF",
+        "on_bg": "#1E242B",
+        "on_bg_muted": "#64748B",
+        "roles": {
+          "link": "#0F1E36",
+          "border": "#EDE8E1"
+        }
+      },
+      {
+        "name": "brand_navy",
+        "kind": "solid",
+        "bg": "#0B1528",
+        "on_bg": "#FAF8F5",
+        "on_bg_muted": "#CBD5E1",
+        "roles": {
+          "link": "#F5D0D6",
+          "accent": "#F5C3CB",
+          "badge_bg": "rgba(245, 195, 203, 0.15)",
+          "border": "#1E293B"
+        }
+      },
+      {
+        "name": "champagne_card",
+        "kind": "solid",
+        "bg": "#F5EFE6",
+        "on_bg": "#1E242B",
+        "on_bg_muted": "#5C6470",
+        "roles": {
+          "link": "#0B1528",
+          "tag": "#8C6B58"
+        }
+      },
+      {
+        "name": "dusty_rose_soft",
+        "kind": "solid",
+        "bg": "#F7EBEC",
+        "on_bg": "#1E242B",
+        "on_bg_muted": "#6E4E55",
+        "roles": {
+          "accent": "#9E4759"
+        }
+      },
+      {
+        "name": "hero",
+        "kind": "image",
+        "contrast_against": "#141A24",
+        "guarantee": "scrim: linear-gradient(to right, rgba(11,21,40,0.88) 0%, rgba(11,21,40,0.65) 50%, rgba(11,21,40,0.30) 100%)",
+        "on_bg": "#FAF8F5",
+        "on_bg_muted": "#CBD5E1",
+        "roles": {
+          "link": "#F5C3CB",
+          "badge": "#FFFFFF",
+          "cta_text": "#0B1528"
+        }
+      },
+      {
+        "name": "header_glass",
+        "kind": "glass",
+        "contrast_against": "#FFFFFF",
+        "guarantee": "backdrop-blur-xl bg-[#FAF8F5]/90 border-b border-[#E8E2D8]/80 shadow-[0_2px_12px_rgba(0,0,0,0.03)]",
+        "on_bg": "#1E242B",
+        "on_bg_muted": "#5C6470",
+        "roles": {
+          "active": "#0B1528",
+          "cart_count_bg": "#0B1528",
+          "cart_count_text": "#FFFFFF"
+        }
+      }
+    ],
+    "accent": "#0B1528",
+    "on_accent": "#FAF8F5",
+    "secondary_accent": "#B87D7B",
+    "on_secondary_accent": "#FFFFFF",
+    "palette_tokens": {
+      "off_white": "#FAF8F5",
+      "pure_white": "#FFFFFF",
+      "nude_beige": "#F4ECE2",
+      "champagne_warm": "#EFE6DA",
+      "dusty_rose": "#C58B93",
+      "dusty_rose_light": "#F9ECEE",
+      "terracotta_soft": "#9E5A53",
+      "deep_navy": "#0B1528",
+      "soft_charcoal": "#1E242B",
+      "muted_slate": "#5C6470",
+      "border_subtle": "#EDE8E1"
+    }
+  },
+  "typography": {
+    "font_family_heading": "Playfair Display Variable, Georgia, serif",
+    "font_family_sans": "Plus Jakarta Sans Variable, -apple-system, BlinkMacSystemFont, sans-serif",
+    "font_family_mono": "Geist Mono Variable, monospace",
+    "imports": [
+      "@import '@fontsource-variable/playfair-display';",
+      "@import '@fontsource-variable/plus-jakarta-sans';",
+      "@import '@fontsource-variable/geist-mono';"
+    ],
+    "scale_px": {
+      "display": 56,
+      "h1": 44,
+      "h2": 32,
+      "h3": 22,
+      "h4": 18,
+      "body": 16,
+      "caption": 14,
+      "tiny": 12
+    },
+    "rules": {
+      "headings": "font-serif tracking-tight font-medium text-[#1E242B] leading-tight",
+      "subheadings": "font-sans text-[#5C6470] tracking-normal leading-relaxed",
+      "overlines": "font-sans uppercase text-xs tracking-[0.2em] font-semibold text-[#8C6B58]",
+      "price_emphasis": "font-sans font-bold text-lg text-[#0B1528]",
+      "installments": "font-sans text-xs text-[#5C6470]"
+    }
+  },
+  "entry_surfaces": {
+    "/": "split hero — brand promise & dual CTA over soft warm gradient left, featured luxury gift hamper showcase right with floating live review card",
+    "/produtos": "editorial catalog — filter sidebar left, 3-column product cards with 2-image hover swap, sort bar & active badge filters",
+    "/produto/:id": "luxury product detail — 2-column layout with 4-thumbnail gallery + zoom left, title, price, installments, personalization field (name, message, file upload), production lead time & sticky CTA right",
+    "/personalizar": "guided 4-step gift builder (Ocasião -> Produto Base -> Personalização de Texto/Arte -> Embalagem Especial & Cartão)",
+    "/carrinho": "interactive slide-over drawer + dedicated cart page with coupon code, CEP shipping calculator & order summary",
+    "/checkout": "distraction-free 5-step checkout (1. Identificação, 2. Endereço, 3. Frete, 4. Pagamento Pix/Cartão, 5. Confirmação)",
+    "/favoritos": "wishlist grid with quick 'Adicionar ao Carrinho' and move-all actions",
+    "/sobre": "editorial brand story — origins, craft values, workshop imagery & quality seal",
+    "/contato": "contact hub — WhatsApp direct chat trigger, FAQ accordion, customized corporate gift inquiry form"
+  },
+  "image_urls": {
+    "logo": {
+      "primary": "https://customer-assets-rejwkqb3.emergentagent.net/job_4549265b-f990-4a2f-a690-f52f74538705/artifacts/0b2c9df89d0ee5ae_WhatsApp%20Image%202026-09-30%20at%2011.13.08.jpeg",
+      "description": "Logotipo oficial Gifts da No - Navy blue background with blush pink serif lettering and bow ornament"
+    },
+    "hero": {
+      "main_hamper": "https://images.unsplash.com/photo-1625552186152-668cd2f0b707?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "description": "Caixas de presente sofisticadas com laços de fita de cetim rosa seco e arranjo floral elegante",
+      "alt": "Caixa de presente personalizada com flores e laço de fita"
+    },
+    "categories": [
+      {
+        "id": "para-ela",
+        "name": "Para Ela",
+        "slug": "para-ela",
+        "image": "https://images.unsplash.com/photo-1630329800786-e2ead5b6bc05?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "tag": "Delicadeza & Cuidado",
+        "items_count": "18 produtos"
+      },
+      {
+        "id": "para-ele",
+        "name": "Para Ele",
+        "slug": "para-ele",
+        "image": "https://images.unsplash.com/photo-1595246007497-15e0ed4b8d96?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "tag": "Elegância & Estilo",
+        "items_count": "14 produtos"
+      },
+      {
+        "id": "casamento",
+        "name": "Casamento & Padrinhos",
+        "slug": "casamento",
+        "image": "https://images.unsplash.com/photo-1639533836788-1488981eb25b?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "tag": "Momentos Inesquecíveis",
+        "items_count": "22 produtos"
+      },
+      {
+        "id": "aniversario",
+        "name": "Aniversário",
+        "slug": "aniversario",
+        "image": "https://images.unsplash.com/photo-1513201099705-a9746e1e201f?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "tag": "Celebrações Únicas",
+        "items_count": "26 produtos"
+      },
+      {
+        "id": "namorados",
+        "name": "Dia dos Namorados",
+        "slug": "namorados",
+        "image": "https://images.pexels.com/photos/20065927/pexels-photo-20065927.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "tag": "Romance & Afeto",
+        "items_count": "19 produtos"
+      },
+      {
+        "id": "maes",
+        "name": "Dia das Mães",
+        "slug": "maes",
+        "image": "https://images.unsplash.com/photo-1592903297149-37fb25202dfa?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "tag": "Amor Incondicional",
+        "items_count": "21 produtos"
+      },
+      {
+        "id": "pais",
+        "name": "Dia dos Pais",
+        "slug": "pais",
+        "image": "https://images.unsplash.com/photo-1595246135406-803418233494?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "tag": "Gratidão & Carinho",
+        "items_count": "15 produtos"
+      },
+      {
+        "id": "amigos",
+        "name": "Amigos & Afetos",
+        "slug": "amigos",
+        "image": "https://images.unsplash.com/photo-1600611928797-41007b839135?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "tag": "Conexões Especiais",
+        "items_count": "17 produtos"
+      },
+      {
+        "id": "corporativo",
+        "name": "Corporativo & Eventos",
+        "slug": "corporativo",
+        "image": "https://images.unsplash.com/photo-1674620213535-9b2a2553ef40?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "tag": "Kits Exclusivos",
+        "items_count": "12 soluções"
+      },
+      {
+        "id": "personalizados",
+        "name": "100% Personalizados",
+        "slug": "personalizados",
+        "image": "https://images.pexels.com/photos/7233939/pexels-photo-7233939.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "tag": "Crie o Seu",
+        "items_count": "Monte seu Kit"
+      }
+    ],
+    "products": [
+      {
+        "id": "box-momentos-inesqueciveis",
+        "name": "Box Luxo Momentos Inesquecíveis",
+        "subtitle": "Caneca personalizada em cerâmica fosca, vela aromática de vanilla e arranjo mini bouquet seco.",
+        "price": 189.90,
+        "original_price": 229.90,
+        "badge": "Mais Vendido",
+        "rating": 5.0,
+        "reviews_count": 48,
+        "category": "personalizados",
+        "image_primary": "https://images.unsplash.com/photo-1625552186152-668cd2f0b707?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "image_hover": "https://images.unsplash.com/photo-1592903297149-37fb25202dfa?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "production_time": "3 a 5 dias úteis"
+      },
+      {
+        "id": "kit-caneca-vela-noiva",
+        "name": "Kit Padrinhos & Casamento Dourado",
+        "subtitle": "Caixa cartonada rígida com gravação a laser personalizada e laço de gorgurão champagne.",
+        "price": 149.00,
+        "original_price": 175.00,
+        "badge": "Destaque",
+        "rating": 4.9,
+        "reviews_count": 32,
+        "category": "casamento",
+        "image_primary": "https://images.unsplash.com/photo-1630329800786-e2ead5b6bc05?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "image_hover": "https://images.unsplash.com/photo-1778333485565-416699e6d645?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "production_time": "2 a 4 dias úteis"
+      },
+      {
+        "id": "box-vela-aromatica-afeto",
+        "name": "Box Sensações & Vela Aromática Afeto",
+        "subtitle": "Vela 100% cera vegetal de coco em pote de vidro âmbar com tampa de madeira e mensagem gravada.",
+        "price": 119.50,
+        "original_price": 139.90,
+        "badge": "Novo",
+        "rating": 4.8,
+        "reviews_count": 19,
+        "category": "para-ela",
+        "image_primary": "https://images.unsplash.com/photo-1778333485565-416699e6d645?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "image_hover": "https://images.unsplash.com/photo-1509024102370-fd7802f4a7a7?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "production_time": "2 a 3 dias úteis"
+      },
+      {
+        "id": "kit-executivo-minimalista",
+        "name": "Box Corporativo & Executivo Minimal",
+        "subtitle": "Caderno de couro ecológico gravado, caneta metálica personalizada e caixa rígida premium.",
+        "price": 169.90,
+        "original_price": 199.90,
+        "badge": "Corporativo",
+        "rating": 5.0,
+        "reviews_count": 27,
+        "category": "corporativo",
+        "image_primary": "https://images.unsplash.com/photo-1595246007497-15e0ed4b8d96?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "image_hover": "https://images.unsplash.com/photo-1595246135406-803418233494?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "production_time": "3 a 7 dias úteis"
+      },
+      {
+        "id": "box-romantica-amor-eterno",
+        "name": "Box Romântica Amor Eterno",
+        "subtitle": "Porta-retrato minimalista madeira natural, polaroids personalizadas e vela em formato de coração.",
+        "price": 198.00,
+        "original_price": 240.00,
+        "badge": "Oferta",
+        "rating": 4.9,
+        "reviews_count": 41,
+        "category": "namorados",
+        "image_primary": "https://images.pexels.com/photos/20065927/pexels-photo-20065927.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "image_hover": "https://images.unsplash.com/photo-1513201099705-a9746e1e201f?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "production_time": "2 a 4 dias úteis"
+      },
+      {
+        "id": "box-duo-canecas-elegance",
+        "name": "Duo Canecas Elegance Personalizadas",
+        "subtitle": "Conjunto de 2 canecas com nomes em dourado fosco, tampa em bambu e colher dourada.",
+        "price": 139.90,
+        "original_price": 160.00,
+        "badge": "Mais Vendido",
+        "rating": 5.0,
+        "reviews_count": 56,
+        "category": "aniversario",
+        "image_primary": "https://images.unsplash.com/photo-1600611928797-41007b839135?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "image_hover": "https://images.unsplash.com/photo-1630329800786-e2ead5b6bc05?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "production_time": "3 a 5 dias úteis"
+      }
+    ],
+    "personalize_section": {
+      "image": "https://images.pexels.com/photos/7233939/pexels-photo-7233939.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Mãos abrindo delicadamente uma caixa artesanal personalizada com carinho e detalhes sob medida"
+    },
+    "instagram_grid": [
+      {
+        "id": "ig-1",
+        "url": "https://images.unsplash.com/photo-1625552186152-668cd2f0b707?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "caption": "Box Luxo preparada para celebrar um casamento especial em SP 💕 #GiftsDaNo"
+      },
+      {
+        "id": "ig-2",
+        "url": "https://images.unsplash.com/photo-1630329800786-e2ead5b6bc05?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "caption": "Caneca da noiva personalizada com carinho nos mínimos detalhes ✨"
+      },
+      {
+        "id": "ig-3",
+        "url": "https://images.unsplash.com/photo-1592903297149-37fb25202dfa?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "caption": "Flores secas e papelaria artesanal para a caixa da mamãe 🌿"
+      },
+      {
+        "id": "ig-4",
+        "url": "https://images.unsplash.com/photo-1513201099705-a9746e1e201f?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "caption": "Fitas de gorgurão e selos de cera: nossa assinatura de carinho 🎀"
+      },
+      {
+        "id": "ig-5",
+        "url": "https://images.pexels.com/photos/20065927/pexels-photo-20065927.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "caption": "Amor expresso em cada detalhe artesanal gravado para o casal 🕯️"
+      },
+      {
+        "id": "ig-6",
+        "url": "https://images.pexels.com/photos/7233939/pexels-photo-7233939.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "caption": "O momento do unboxing é onde a mágica acontece. Quem recebe, ama! 🎁"
+      }
+    ],
+    "testimonials": [
+      {
+        "id": "dep-1",
+        "name": "Mariana Castilho",
+        "location": "São Paulo, SP",
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?crop=entropy&cs=srgb&fm=jpg&w=150&h=150&fit=crop",
+        "product": "Box Luxo Momentos Inesquecíveis",
+        "comment": "A reação da minha melhor amiga ao abrir a caixa foi indescritível! A qualidade da fita, o aroma ao abrir e a gravação perfeita do nome dela superaram todas as expectativas.",
+        "rating": 5
+      },
+      {
+        "id": "dep-2",
+        "name": "Rafael Albuquerque",
+        "location": "Curitiba, PR",
+        "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=srgb&fm=jpg&w=150&h=150&fit=crop",
+        "product": "Kit Padrinhos & Casamento",
+        "comment": "Pedimos 16 kits para os padrinhos do nosso casamento. Chegou impecável, no prazo prometido e a embalagem em azul-marinho com champagne é puro luxo.",
+        "rating": 5
+      },
+      {
+        "id": "dep-3",
+        "name": "Beatriz Vianna",
+        "location": "Belo Horizonte, MG",
+        "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=entropy&cs=srgb&fm=jpg&w=150&h=150&fit=crop",
+        "product": "Box Sensações & Vela Aromática",
+        "comment": "O atendimento pelo WhatsApp foi tão acolhedor e atencioso! Personalizaram a frase exatamente como eu pedi para o aniversário da minha mãe. Recomendo de olhos fechados.",
+        "rating": 5
+      }
+    ]
+  },
+  "layout_and_grids": {
+    "container_max_width": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "section_spacing": "py-16 sm:py-24",
+    "grid_modes": {
+      "categories_grid": "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-5",
+      "product_grid": "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8",
+      "occasion_grid": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6",
+      "instagram_grid": "grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4",
+      "testimonials_grid": "grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8"
+    },
+    "header": {
+      "top_bar": "bg-[#0B1528] text-[#F5EFE6] text-xs font-medium py-2 px-4 text-center tracking-wide flex items-center justify-center gap-3",
+      "top_bar_copy": "Personalizados feitos com carinho • Enviamos para todo o Brasil • Pagamento 100% seguro via Pix ou Cartão",
+      "nav_desktop": "flex items-center justify-between h-20 px-6 max-w-7xl mx-auto",
+      "nav_links": [
+        {"label": "Início", "path": "/"},
+        {"label": "Presentes", "path": "/produtos"},
+        {"label": "Categorias", "path": "/#categorias"},
+        {"label": "Personalizados", "path": "/personalizar"},
+        {"label": "Mais Vendidos", "path": "/produtos?filtro=mais-vendidos"},
+        {"label": "Sobre nós", "path": "/sobre"},
+        {"label": "Contato", "path": "/contato"}
+      ]
+    }
+  },
+  "motion_and_interactions": {
+    "library": "motion (from 'motion/react')",
+    "micro_interactions": {
+      "product_card_hover": "group hover:-translate-y-1.5 transition-transform duration-300 ease-out shadow-sm hover:shadow-[0_12px_30px_rgba(11,21,40,0.08)]",
+      "image_hover_swap": "opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out absolute inset-0 object-cover",
+      "button_press": "active:scale-[0.98] transition-transform duration-150",
+      "category_card": "hover:border-[#0B1528] transition-all duration-300 hover:shadow-md",
+      "toast_feedback": "sonner Toaster positioned bottom-right with richColors"
+    },
+    "page_transitions": "initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35, ease: 'easeOut' }}"
+  },
+  "accessibility": {
+    "wcag_level": "WCAG AA (4.5:1 for normal text, 3:1 for large display)",
+    "focus_rings": "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0B1528] focus-visible:ring-offset-2",
+    "reduced_motion": "@media (prefers-reduced-motion: reduce) { * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }",
+    "testing_attributes": "All buttons, inputs, links, cart triggers, and cards MUST include kebab-case data-testid (e.g. data-testid='hero-cta-personalize-button', data-testid='product-card-box-momentos', data-testid='cart-drawer-trigger', data-testid='checkout-pix-payment-button')"
+  },
+  "components_blueprint": {
+    "components_to_create": [
+      {
+        "path": "frontend/src/components/layout/Header.tsx",
+        "purpose": "Sticky top bar + main navigation with brand logo, live search modal trigger, favorites counter, user account popover, and cart drawer trigger."
+      },
+      {
+        "path": "frontend/src/components/layout/Footer.tsx",
+        "purpose": "Comprehensive footer with brand narrative, category links, trust badges (Pix, Visa, Mastercard, Compra Segura SSL), newsletter signup, and social links."
+      },
+      {
+        "path": "frontend/src/components/home/HeroSection.tsx",
+        "purpose": "Hero banner with warm luxury backdrop, headline 'Presentes que transformam momentos em memórias', subtext, dual CTAs, trust pill tags, and floating review card."
+      },
+      {
+        "path": "frontend/src/components/home/CategoriesGrid.tsx",
+        "purpose": "10 curated category cards with subtle borders, images, category tags, item count, and smooth hover elevation."
+      },
+      {
+        "path": "frontend/src/components/home/BestSellersSection.tsx",
+        "purpose": "'Mais amados' product showcase with badge, price, installments (até 6x), 2-image hover transition, favorite toggle, and quick add-to-cart."
+      },
+      {
+        "path": "frontend/src/components/home/PersonalizeBanner.tsx",
+        "purpose": "'Seu presente. Do seu jeito.' interactive customizer banner with photo composition and 'Quero Personalizar' CTA."
+      },
+      {
+        "path": "frontend/src/components/home/HowItWorks.tsx",
+        "purpose": "4-step minimalist visual timeline: 01 Escolha -> 02 Personalize -> 03 Finalize -> 04 Receba com afeto."
+      },
+      {
+        "path": "frontend/src/components/home/OccasionsSection.tsx",
+        "purpose": "Emotional occasion cards ('Quero presentear minha mãe', 'Surpreender meu amor', 'Padrinhos de Casamento', etc.)."
+      },
+      {
+        "path": "frontend/src/components/home/TestimonialsSection.tsx",
+        "purpose": "'Quem recebe, ama.' customer reviews with avatar, 5 stars, verified purchase badge, and real recipient photos."
+      },
+      {
+        "path": "frontend/src/components/home/InstagramFeed.tsx",
+        "purpose": "'Momentos que viraram presentes' live instagram grid layout with @giftsdano CTA."
+      },
+      {
+        "path": "frontend/src/components/home/TrustFeatures.tsx",
+        "purpose": "4 trust pillars: Feito à mão com afeto, Envio seguro para todo Brasil, Personalização exclusiva, Atendimento humanizado no WhatsApp."
+      },
+      {
+        "path": "frontend/src/components/cart/CartDrawer.tsx",
+        "purpose": "Slide-over cart sheet with quantity controls, CEP calculator with Sedex/PAC estimates, coupon input, subtotal, and 'Finalizar Compra' CTA."
+      },
+      {
+        "path": "frontend/src/components/search/SearchModal.tsx",
+        "purpose": "Instant fuzzy search modal with instant results, recent searches, category shortcuts, and price previews."
+      },
+      {
+        "path": "frontend/src/components/common/WhatsAppButton.tsx",
+        "purpose": "Floating WhatsApp button with customized tooltip 'Fale com a nossa equipe de presentes personalizadas'."
+      },
+      {
+        "path": "frontend/src/pages/CatalogPage.tsx",
+        "purpose": "Shop / Catalog with multi-filter (price range, occasion, category, recipient), sorting, active tags, and grid/list toggle."
+      },
+      {
+        "path": "frontend/src/pages/ProductDetailPage.tsx",
+        "purpose": "High-conversion product page with 4-image interactive gallery, zoom, live preview for personalized text / recipient name, photo upload dropzone, installments breakdown, CEP shipping calculator, and related products."
+      },
+      {
+        "path": "frontend/src/pages/CustomizerPage.tsx",
+        "purpose": "Step-by-step custom gift builder (Box -> Presente Base -> Personalização de Gravação/Texto -> Fita/Embalagem -> Cartão com Mensagem)."
+      },
+      {
+        "path": "frontend/src/pages/CheckoutPage.tsx",
+        "purpose": "Clean 5-step simulated checkout (Identificação, Endereço com busca de CEP, Frete, Pagamento Pix com QR Code mock + Cartão simulado, Confirmação com número do pedido)."
+      },
+      {
+        "path": "frontend/src/pages/FavoritesPage.tsx",
+        "purpose": "Dedicated wishlist page with saved gifts and quick batch actions."
+      },
+      {
+        "path": "frontend/src/pages/AboutPage.tsx",
+        "purpose": "Brand heritage, mission 'Afetos que encantam', atelier process, and quality commitment."
+      },
+      {
+        "path": "frontend/src/pages/ContactPage.tsx",
+        "purpose": "Contact hub, corporate gift inquiry form, FAQ accordion, and workshop location/hours."
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Retheme `frontend/src/index.css` by importing '@fontsource-variable/playfair-display', '@fontsource-variable/plus-jakarta-sans', and '@fontsource-variable/geist-mono', and setting `--font-heading: 'Playfair Display Variable', serif;` and `--font-sans: 'Plus Jakarta Sans Variable', sans-serif;`.",
+    "Configure background color to `#FAF8F5` (warm delicate off-white) and primary accent to `#0B1528` (deep navy from the official logo).",
+    "Use the official logo image URL: `https://customer-assets-rejwkqb3.emergentagent.net/job_4549265b-f990-4a2f-a690-f52f74538705/artifacts/0b2c9df89d0ee5ae_WhatsApp%20Image%202026-09-30%20at%2011.13.08.jpeg` in the header, footer, and checkout navigation.",
+    "Implement full mock and interactive state management for Cart, Wishlist, Search, Customizer, and 5-step Checkout (supporting simulated Pix with dynamic QR code & copy-paste code, and Credit Card simulation with installment calculator up to 6x sem juros).",
+    "Ensure all copy is in fluent, elegant Brazilian Portuguese with emotional, sophisticated tone (e.g., 'Afetos que Encantam', 'Presentes com Alma', 'Produzido com Carinho').",
+    "Every clickable or interactive element must have a clear `data-testid` attribute (e.g., `data-testid='btn-add-to-cart'`, `data-testid='input-personalization-name'`).",
+    "Provide a simulated backend seed script (`backend/seed.py`) with rich product catalog data matching the categories and products defined in these guidelines."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Avoid generic centered Bootstrap-like layouts; use sophisticated asymmetric grids, generous padding (p-6 to p-12), and delicate 1px borders (#EDE8E1).",
+    "Never use generic AI emojis like 🤖🧠💡. Use clean Lucide icons (Heart, ShoppingBag, Sparkles, Gift, Truck, ShieldCheck, Clock, MessageCircle, Star, Search, User, Filter, Share2).",
+    "Always provide immediate tactile feedback on interactions (subtle scale down on click, smooth image opacity transition on card hover).",
+    "Ensure total contrast compliance: dark navy text (#0B1528 / #1E242B) on off-white (#FAF8F5 / #FFFFFF) exceeds 10:1 ratio.",
+    "Use Sonner for toast notifications on actions like 'Item adicionado ao carrinho!', 'Salvo nos favoritos', and 'Cupom AFETO10 aplicado!'."
+  ]
+}
