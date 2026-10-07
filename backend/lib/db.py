@@ -1,4 +1,4 @@
-"""Shared Mongo handle — import `client`/`db` from here (server.py, routers, seed.py)."""
+"""Conexão compartilhada com o MongoDB — importe `client`/`db` daqui (server.py, rotas, seed.py)."""
 
 import logging
 import os
@@ -16,7 +16,7 @@ db = client[os.environ["DB_NAME"]]
 
 logger = logging.getLogger(__name__)
 
-# One entry per collection: every field a route filters, sorts, or dedupes on. Applied by ensure_indexes() at startup.
+# Índices por coleção: todo campo usado para filtrar, ordenar ou evitar duplicados. Aplicados por ensure_indexes() ao iniciar.
 INDEXES: dict[str, list[IndexModel]] = {
     "status_checks": [IndexModel([("timestamp", DESCENDING)], name="timestamp_desc")],
     "products": [
@@ -45,8 +45,8 @@ INDEXES: dict[str, list[IndexModel]] = {
 
 async def ensure_indexes() -> None:
     for collection, models in INDEXES.items():
-        for model in models:  # one at a time so a bad spec skips only itself
+        for model in models:  # um por vez, assim um índice com erro não impede os outros
             try:
                 await db[collection].create_indexes([model])
-            except Exception as exc:  # never block boot on an index; the log line names what to fix
+            except Exception as exc:  # nunca travar a inicialização por causa de índice; o log mostra o que corrigir
                 logger.error("ensure_indexes(%s.%s): %s", collection, model.document["name"], exc)

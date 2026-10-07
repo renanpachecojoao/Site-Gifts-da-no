@@ -108,7 +108,7 @@ async def exchange(body: GoogleExchange, response: Response):
 
 @router.get("/me", response_model=Optional[User])
 async def me(request: Request):
-    """Who am I — `null` for anonymous visitors (avoids a 401 on every page load)."""
+    """Quem está logado — retorna `null` para visitantes (evita erro 401 em toda página)."""
     user = await optional_user(request)
     return _public(user) if user else None
 

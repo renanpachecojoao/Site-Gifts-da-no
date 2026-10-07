@@ -2,7 +2,7 @@
  * Tipos TypeScript que espelham os modelos do backend (backend/models/shop.py).
  * Ao mudar um modelo no Python, atualize o tipo correspondente aqui.
  */
-// Hand-written mirrors of backend/models/shop.py — keep in sync.
+// Espelhos escritos à mão de backend/models/shop.py — mantenha sincronizado.
 
 export interface Category {
   slug: string;

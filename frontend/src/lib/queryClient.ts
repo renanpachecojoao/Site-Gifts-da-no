@@ -1,4 +1,4 @@
 import { QueryClient } from "@tanstack/react-query";
 
-// Exported so lib/session can wipe it at session boundaries — cached data outlives logout.
+// Cliente de cache do TanStack Query, exportado para que lib/session possa limpá-lo no login/logout.
 export const queryClient = new QueryClient();

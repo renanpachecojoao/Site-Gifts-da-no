@@ -21,26 +21,26 @@ from datetime import datetime
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
 
-# MongoDB connection
+# Conexão com o MongoDB (cliente compartilhado em lib/db.py)
 from lib.db import client, db, ensure_indexes
 
 
-# Startup runs before the yield, shutdown after it. Add your own setup/teardown here.
+# Ciclo de vida da API: o que vem antes do yield roda ao iniciar; o que vem depois, ao desligar.
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    app.state.index_task = asyncio.create_task(ensure_indexes())  # background: a big index build must not block boot
+    app.state.index_task = asyncio.create_task(ensure_indexes())  # em segundo plano: criar índices não pode travar a inicialização
     yield
     client.close()
 
 
-# Create the main app without a prefix
+# Cria o app principal (sem prefixo)
 app = FastAPI(lifespan=lifespan)
 
-# Create a router with the /api prefix
+# Cria o roteador com prefixo /api (todas as rotas ficam aqui)
 api_router = APIRouter(prefix="/api")
 
 
-# Define Models
+# Modelos de exemplo do modelo inicial (verificação de status da API)
 class StatusCheck(BaseModel):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     client_name: str
@@ -49,7 +49,7 @@ class StatusCheck(BaseModel):
 class StatusCheckCreate(BaseModel):
     client_name: str
 
-# Add your routes to the router instead of directly to app
+# As rotas são registradas no roteador, nunca direto no app
 @api_router.get("/")
 async def root():
     return {"message": "Hello World"}
@@ -73,7 +73,7 @@ api_router.include_router(catalog.router)
 api_router.include_router(checkout.router)
 api_router.include_router(misc.router)
 
-# Include the router in the main app
+# Inclui o roteador no app principal (deve ser a última inclusão de rotas)
 app.include_router(api_router)
 
 app.add_middleware(
@@ -84,7 +84,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Configure logging
+# Configuração de logs
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'

@@ -8,7 +8,7 @@
 # - CartLine / QuoteRequest / Quote / ShippingOption: cálculo do carrinho (subtotal, cupom, frete, total).
 # - Customer / Address / OrderLineIn / OrderCreate / OrderLine / Order: dados do checkout e do pedido salvo.
 # - NewsletterIn, ContactIn, UploadIn/UploadOut, User, GoogleExchange, Message: demais entradas/saídas.
-"""Pydantic models for the Gifts da No store. Mirrored by hand in frontend/src/lib/types.ts."""
+"""Modelos Pydantic da loja Gifts da No (espelhados em frontend/src/lib/types.ts)."""
 
 import uuid
 from datetime import datetime, timezone
@@ -80,7 +80,7 @@ class Review(ReviewCreate):
     created_at: datetime = Field(default_factory=now_utc)
 
 
-# ---------- cart / checkout ----------
+# ---------- carrinho / checkout ----------
 
 class CartLine(BaseModel):
     product_id: str
@@ -173,7 +173,7 @@ class Order(BaseModel):
     created_at: datetime = Field(default_factory=now_utc)
 
 
-# ---------- misc ----------
+# ---------- diversos ----------
 
 class NewsletterIn(BaseModel):
     email: EmailStr

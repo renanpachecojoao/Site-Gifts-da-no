@@ -1,11 +1,7 @@
-// recharts 3 turned Tooltip from a generic class, `Tooltip<TValue, TName>`, into a plain function fixed
-// to `TooltipProps<ValueType, NameType>`, and its formatter now receives `TValue | undefined`. On
-// recharts 2 (what every tutorial and model learned) the `(v: number) =>` formatter and
-// `(label: string) =>` labelFormatter an agent writes inferred their type parameters; on 3.x they fail
-// TS2322 under strictFunctionTypes. Vite and tsconfig alias "recharts" here: everything from the real
-// package, plus Tooltip declared with recharts 2's generic callback signatures. Nothing changes at
-// runtime (as on 2.x, a missing datum still reaches the formatter as undefined). Raw package:
-// "recharts-upstream".
+// O recharts 3 mudou a tipagem do Tooltip; este arquivo (apontado como "recharts" pelo Vite e tsconfig)
+// exporta tudo do pacote original e redeclara o Tooltip com a tipagem do recharts 2, para que
+// formatter={(v: number) => ...} e labelFormatter={(label: string) => ...} funcionem. Nada muda em execução.
+// Pacote original: "recharts-upstream".
 /* oxlint-disable react/only-export-components -- `export *` re-exports upstream components */
 import type { ReactNode } from "react";
 import {
@@ -40,6 +36,6 @@ export function Tooltip<
     labelFormatter?: (label: TLabel, payload: TooltipPayload) => ReactNode;
   },
 ) {
-  // The type parameters only narrow what the callbacks declare; recharts 2 erased them the same way.
+  // Os parâmetros de tipo só restringem o que as funções declaram; o recharts 2 fazia o mesmo.
   return <UpstreamTooltip {...(props as UpstreamProps)} />;
 }

@@ -1,14 +1,14 @@
-// Session boundary: auth is an httpOnly cookie the backend owns; the frontend's one
-// duty is wiping the react-query cache so one account's data never renders for the next.
+// Controle de sessão: o login é um cookie httpOnly gerenciado pelo backend; o papel do
+// frontend é limpar o cache de dados para que os dados de uma conta nunca apareçam para outra.
 import { queryClient } from "./queryClient";
 import { apiPost } from "./api";
 
-// Call after every successful login/signup.
+// Chamar após todo login bem-sucedido.
 export function beginSession(): void {
   queryClient.clear();
 }
 
-// Call from every sign-out control; the hard redirect resets all in-memory state.
+// Chamar em todo botão de sair; o redirecionamento completo limpa todo o estado em memória.
 export async function endSession(redirectTo: string = "/login"): Promise<void> {
   try {
     await apiPost("/auth/logout");

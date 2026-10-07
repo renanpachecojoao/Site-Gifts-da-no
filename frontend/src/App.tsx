@@ -13,7 +13,7 @@ import Checkout from "@/pages/Checkout";
 import { Account, Favorites } from "@/pages/AccountPages";
 import { About, Contact, NotFound } from "@/pages/InfoPages";
 
-// One <Route> per page in src/pages; BrowserRouter already wraps this in main.tsx.
+// Uma <Route> por página de src/pages; o BrowserRouter já envolve o app em main.tsx.
 export default function App() {
   return (
     <ShopProvider>

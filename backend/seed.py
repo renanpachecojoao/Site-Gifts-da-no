@@ -5,7 +5,7 @@
 # - PRODUCTS: produtos com preço, preço promocional, categorias, opções e prazos.
 #   Para cadastrar um produto novo, copie um bloco dict(...) e altere os campos.
 # - main(): apaga produtos/avaliações antigos e grava tudo de novo.
-"""Idempotent catalog seed: `cd /app/backend && python seed.py`."""
+"""Popula o catálogo (pode rodar várias vezes): `cd backend && python seed.py`."""
 
 import asyncio
 from datetime import timedelta
