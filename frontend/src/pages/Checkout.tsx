@@ -1,3 +1,9 @@
+/**
+ * Checkout em 5 etapas: Dados pessoais, Endereço, Entrega, Pagamento e Revisão.
+ * - validate(): confere os campos de cada etapa antes de avançar.
+ * - submit(): envia o pedido para /api/orders. PAGAMENTO SIMULADO (nenhum valor é cobrado).
+ * - Resumo do pedido fixo ao lado. Confirmation: tela final com número do pedido e Pix fictício.
+ */
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useMutation } from "@tanstack/react-query";

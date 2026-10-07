@@ -1,3 +1,13 @@
+# Modelos de dados (Pydantic) da loja Gifts da No.
+# Cada modelo tem um espelho em TypeScript em frontend/src/lib/types.ts — ao alterar aqui, altere lá também.
+# - Category: categoria da vitrine (slug, nome, frase curta, imagem, ordem).
+# - OptionGroup / Personalization: opções do produto (tamanho, acabamento...) e o que pode ser
+#   personalizado (nome, mensagem, upload de arte) com limites de caracteres.
+# - Product: produto completo (preço, preço promocional, estoque, SKU, selo, avaliações, materiais...).
+# - ReviewCreate / Review: avaliação enviada pelo cliente e a avaliação salva.
+# - CartLine / QuoteRequest / Quote / ShippingOption: cálculo do carrinho (subtotal, cupom, frete, total).
+# - Customer / Address / OrderLineIn / OrderCreate / OrderLine / Order: dados do checkout e do pedido salvo.
+# - NewsletterIn, ContactIn, UploadIn/UploadOut, User, GoogleExchange, Message: demais entradas/saídas.
 """Pydantic models for the Gifts da No store. Mirrored by hand in frontend/src/lib/types.ts."""
 
 import uuid

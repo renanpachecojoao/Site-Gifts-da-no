@@ -1,3 +1,8 @@
+/**
+ * Rodapé: logo, descrição, redes sociais, colunas de links (Gifts da No, Atendimento,
+ * Compra, Políticas), formas de pagamento e selos de compra segura.
+ * COLS e SOCIAL definem os links — troque pelos endereços reais.
+ */
 import { Link } from "react-router-dom";
 import { CreditCard, Lock, ShieldCheck } from "lucide-react";
 import { SiFacebook, SiInstagram, SiPix, SiTiktok, SiWhatsapp } from "@icons-pack/react-simple-icons";

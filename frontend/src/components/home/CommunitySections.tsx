@@ -1,3 +1,9 @@
+/**
+ * Seções de comunidade da home.
+ * - Testimonials: depoimentos (TESTIMONIALS) e indicadores de confiança (METRICS).
+ * - InstagramFeed: grade de fotos estilo Instagram (FEED) + botão @giftsdano.
+ * - Newsletter: formulário que envia o e-mail para /api/newsletter.
+ */
 import { useState, type FormEvent } from "react";
 import { useMutation } from "@tanstack/react-query";
 import { toast } from "sonner";

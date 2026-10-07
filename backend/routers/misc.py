@@ -1,3 +1,9 @@
+# Rotas auxiliares.
+# - POST /api/newsletter     -> cadastra e-mail na newsletter (sem duplicar).
+# - POST /api/contact        -> salva mensagem do formulário de contato.
+# - POST /api/uploads        -> recebe a arte do cliente em base64 (PNG/JPG/WEBP, até 5 MB),
+#                               salva em backend/uploads e devolve a URL.
+# - GET  /api/uploads/{fid}  -> devolve o arquivo enviado (nome validado para segurança).
 import base64
 import re
 import uuid

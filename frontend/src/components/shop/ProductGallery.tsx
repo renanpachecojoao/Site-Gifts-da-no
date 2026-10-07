@@ -1,3 +1,7 @@
+/**
+ * Galeria da página de produto: miniaturas + imagem principal com zoom que segue o mouse
+ * (no celular, toque para ampliar).
+ */
 import { useState, type MouseEvent } from "react";
 import { cn } from "@/lib/utils";
 

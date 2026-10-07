@@ -1,3 +1,6 @@
+/**
+ * Card de categoria com imagem, frase e nome; leva para /produtos?categoria=slug.
+ */
 import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import type { Category } from "@/lib/types";

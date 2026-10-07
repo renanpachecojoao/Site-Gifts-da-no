@@ -1,3 +1,9 @@
+/**
+ * Estrutura comum a todas as páginas.
+ * - ScrollManager: volta ao topo ao trocar de página ou rola até a âncora (#categorias, #faq...).
+ * - WhatsAppButton: botão flutuante do WhatsApp.
+ * - Layout: Header + conteúdo da página (<Outlet/>) + Footer + Sacola + Busca + avisos (toasts).
+ */
 import { useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import { SiWhatsapp } from "@icons-pack/react-simple-icons";

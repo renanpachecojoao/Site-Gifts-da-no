@@ -1,3 +1,9 @@
+/**
+ * Páginas da área do cliente.
+ * - Account (/conta): login com Google; ao voltar do Google lê o session_id da URL, troca por
+ *   uma sessão segura (cookie) e mostra perfil + 'Meus pedidos'. Botão Sair encerra a sessão.
+ * - Favorites (/favoritos): produtos marcados com coração.
+ */
 import { useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";

@@ -1,4 +1,15 @@
-"""Emergent-managed Google login → own opaque session in Mongo, delivered as an httpOnly cookie."""
+"""Login com Google (Emergent Auth).
+
+Fluxo:
+1. O site manda o cliente para auth.emergentagent.com; ele volta para /conta#session_id=...
+2. O front chama POST /api/auth/google/exchange com esse session_id.
+3. Aqui validamos o session_id no serviço da Emergent, criamos/atualizamos o usuário e
+   geramos uma sessão própria guardada no Mongo (só o hash do token é salvo).
+4. O token vai para o navegador num cookie httpOnly (gn_session), invisível para JavaScript.
+- GET  /api/auth/me     -> usuário logado ou null.
+- POST /api/auth/logout -> apaga a sessão e o cookie.
+- optional_user / require_user: helpers usados por outras rotas (ex.: /orders/mine).
+"""
 
 import hashlib
 import os

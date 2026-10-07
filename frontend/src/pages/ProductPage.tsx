@@ -1,3 +1,11 @@
+/**
+ * Página de produto (/produto/:slug).
+ * - Galeria com zoom, nome, avaliações, preço, desconto, Pix e parcelamento.
+ * - Opções (tamanho, acabamento...), personalização (nome, mensagem, upload da arte).
+ * - Quantidade, Comprar agora (vai ao checkout) e Adicionar ao carrinho.
+ * - Prazo de produção, cálculo de frete, abas de descrição/materiais/cuidados.
+ * - ReviewsBlock: lista e formulário de avaliações. Produtos relacionados no final.
+ */
 import { useEffect, useState, type ChangeEvent, type FormEvent } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { useMutation, useQueryClient } from "@tanstack/react-query";

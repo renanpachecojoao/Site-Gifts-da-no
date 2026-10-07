@@ -1,3 +1,7 @@
+/**
+ * Seção principal da home: título, subtítulo, botões, prova social, foto grande com
+ * card de depoimento, flores decorativas e faixa de benefícios (TRUST).
+ */
 import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 import { ArrowRight, MessageCircle, ShieldCheck, Sparkles, Truck } from "lucide-react";

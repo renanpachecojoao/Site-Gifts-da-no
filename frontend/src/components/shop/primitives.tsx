@@ -1,3 +1,10 @@
+/**
+ * Peças visuais reutilizáveis.
+ * - Reveal: animação suave de entrada quando o elemento aparece na tela.
+ * - SectionHeading: título padrão das seções (sobretítulo, título, subtítulo e ação opcional).
+ * - Stars: estrelas de avaliação.
+ * - container: classes de largura máxima e margens laterais.
+ */
 import { motion } from "motion/react";
 import type { ReactNode } from "react";
 import { Star } from "lucide-react";

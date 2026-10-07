@@ -1,3 +1,7 @@
+/**
+ * Modal de busca: buscas populares, atalhos de categorias e resultados ao digitar
+ * (a partir de 2 letras). Enter leva para a página de resultados.
+ */
 import { useState, type FormEvent } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ArrowRight, Search } from "lucide-react";

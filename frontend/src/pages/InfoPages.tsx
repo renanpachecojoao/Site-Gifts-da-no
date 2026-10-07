@@ -1,3 +1,9 @@
+/**
+ * Páginas institucionais.
+ * - About (/sobre): história e valores da marca.
+ * - Contact (/contato): formulário (salvo em /api/contact), canais, FAQ e políticas.
+ * - NotFound: página 404.
+ */
 import { useEffect, useState, type FormEvent } from "react";
 import { Link } from "react-router-dom";
 import { useMutation } from "@tanstack/react-query";

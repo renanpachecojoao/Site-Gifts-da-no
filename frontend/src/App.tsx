@@ -1,3 +1,8 @@
+/**
+ * Tabela de rotas (páginas) do site.
+ * Todas as páginas ficam dentro do <Layout> (barra superior, header, footer, sacola, busca e WhatsApp).
+ * ShopProvider envolve tudo para compartilhar carrinho e favoritos entre as páginas.
+ */
 import { Routes, Route } from "react-router-dom";
 import { ShopProvider } from "@/lib/store";
 import { Layout } from "@/components/layout/Layout";

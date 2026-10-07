@@ -1,3 +1,12 @@
+/**
+ * Cabeçalho do site.
+ * - NAV: itens do menu (edite aqui para mudar o menu).
+ * - AnnouncementBar: barra superior com mensagens (no celular, rola como letreiro).
+ * - IconButton: botão redondo de ícone com contador opcional (favoritos/sacola).
+ * - Header: fixo no topo; ao rolar a página fica menor, translúcido e com sombra.
+ *   No desktop: logo à esquerda, menu central, ícones à direita.
+ *   No celular: menu hambúrguer + busca à esquerda, logo central, sacola à direita.
+ */
 import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { Heart, Menu, Search, ShoppingBag, User } from "lucide-react";

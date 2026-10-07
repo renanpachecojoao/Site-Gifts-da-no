@@ -1,3 +1,7 @@
+/**
+ * Endereços das imagens usadas nas seções da home (hero, ateliê, produtos, avatares).
+ * Para trocar uma foto do site, troque a URL aqui.
+ */
 const G = "https://static.prod-images.emergentagent.com/jobs/4549265b-f990-4a2f-a690-f52f74538705/images/";
 const U = (id: string, w = 900) => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=80`;
 

@@ -1,3 +1,10 @@
+/**
+ * Consultas à API com TanStack Query (cache automático).
+ * - useProducts(filtros), useProduct(slug), useRelated, useReviews, useCategories.
+ * - useMe(): usuário logado (ou null).
+ * - useQuote(): resumo do carrinho calculado no servidor.
+ * - googleLogin(): redireciona para o login do Google (Emergent Auth) e volta para /conta.
+ */
 import { keepPreviousData, useQuery } from "@tanstack/react-query";
 import { apiGet, apiPost } from "./api";
 import type { Category, Product, Quote, QuoteRequest, Review, User } from "./types";

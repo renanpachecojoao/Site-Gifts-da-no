@@ -1,3 +1,8 @@
+/**
+ * Página de produtos (/produtos).
+ * Filtros ficam na URL (?categoria=, ?selo=, ?preco=, ?q=, ?ordenar=), então dá para compartilhar o link.
+ * - Filtros laterais no desktop e em painel no celular; chips para remover filtros ativos; ordenação.
+ */
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { SlidersHorizontal, X } from "lucide-react";

@@ -1,3 +1,12 @@
+/**
+ * Funções de formatação e constantes da loja.
+ * - money(): formata em reais (R$).
+ * - finalPrice(): preço promocional se houver, senão o preço normal.
+ * - discountPct(): percentual de desconto.
+ * - installmentsText(): texto de parcelamento (até 6x, parcela mínima ~R$ 30).
+ * - pixPrice(): preço com 5% de desconto no Pix.
+ * - WHATSAPP_URL / INSTAGRAM_URL: troque pelos contatos reais da loja.
+ */
 import type { Product } from "./types";
 
 const brl = new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" });

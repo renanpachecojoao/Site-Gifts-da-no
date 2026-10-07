@@ -1,3 +1,13 @@
+# Rotas de carrinho e pedidos.
+# - COUPONS: cupons válidos (AFETO10 = 10%, BEMVINDA15 = 15% acima de R$150, FRETEGRATIS).
+# - _shipping_options(): frete SIMULADO por região do CEP (PAC e SEDEX); PAC grátis acima de R$ 299.
+# - _priced_lines(): busca os produtos no banco e calcula o subtotal com o preço do servidor
+#   (o preço nunca vem do navegador, evitando fraude).
+# - _quote(): aplica cupom, calcula frete e total.
+# - POST /api/cart/quote  -> devolve o resumo do carrinho (usado na sacola e no checkout).
+# - POST /api/orders      -> cria o pedido. PAGAMENTO SIMULADO: Pix dá 5% de desconto e gera
+#                            um código Pix fictício; cartão é aprovado direto. Baixa estoque e soma vendas.
+# - GET  /api/orders/mine -> pedidos do usuário logado (exige login).
 import random
 import re
 from typing import Optional

@@ -1,3 +1,9 @@
+# Ponto de entrada da API (FastAPI).
+# - Cria o app e o roteador principal com prefixo /api.
+# - Inclui os módulos de rotas: auth (login Google), catalog (produtos/categorias/avaliações),
+#   checkout (cotação do carrinho e pedidos) e misc (newsletter, contato, upload de artes).
+# - IMPORTANTE: app.include_router(api_router) precisa ficar no final, depois de todas as rotas.
+# - Configura CORS (origens vindas do .env) e o log.
 import asyncio
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, APIRouter

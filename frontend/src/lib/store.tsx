@@ -1,3 +1,11 @@
+/**
+ * Estado global da loja (React Context), salvo no localStorage do navegador.
+ * - cart: itens da sacola (cada combinação de produto + personalização vira uma linha diferente).
+ * - addToCart / setQuantity / removeFromCart / clearCart: ações da sacola.
+ * - favorites / toggleFavorite: lista de favoritos (ids dos produtos).
+ * - cartOpen / searchOpen: controla a sacola lateral e o modal de busca.
+ * - coupon / cep / shippingMethod: cupom, CEP e frete escolhidos (reaproveitados no checkout).
+ */
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import { toast } from "sonner";
 import type { OrderLineIn } from "./types";

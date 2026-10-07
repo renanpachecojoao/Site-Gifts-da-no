@@ -1,3 +1,10 @@
+/**
+ * Seções narrativas da home.
+ * - PersonalizeSection: 'Seu presente. Do seu jeito.' com colagem de fotos e prévia interativa
+ *   de um button com o nome digitado.
+ * - HowItWorks: 4 passos (STEPS) com ícones e animação ao aparecer.
+ * - OccasionsSection: cards grandes por ocasião (OCCASIONS) — edite para mudar textos/links.
+ */
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Gift, PackageCheck, PenLine, ShieldCheck } from "lucide-react";

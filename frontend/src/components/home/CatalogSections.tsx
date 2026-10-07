@@ -1,3 +1,8 @@
+/**
+ * Seções da home ligadas ao catálogo.
+ * - CategoriesSection: 'Encontre o presente ideal' (categorias vindas da API).
+ * - BestSellers: 'Mais amados' (8 produtos mais vendidos) + botão Ver todos os produtos.
+ */
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { useCategories, useProducts } from "@/lib/queries";

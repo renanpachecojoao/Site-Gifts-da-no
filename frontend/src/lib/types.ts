@@ -1,3 +1,7 @@
+/**
+ * Tipos TypeScript que espelham os modelos do backend (backend/models/shop.py).
+ * Ao mudar um modelo no Python, atualize o tipo correspondente aqui.
+ */
 // Hand-written mirrors of backend/models/shop.py — keep in sync.
 
 export interface Category {

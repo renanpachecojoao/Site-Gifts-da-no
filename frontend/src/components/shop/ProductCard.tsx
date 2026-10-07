@@ -1,3 +1,9 @@
+/**
+ * Card de produto e grade de produtos.
+ * - ProductCard: imagem (troca pela 2ª foto ao passar o mouse), selo, desconto, favorito,
+ *   nome, descrição, preços, parcelamento e botão Comprar (adiciona com as opções padrão).
+ * - ProductGrid: grade responsiva com estados de carregando, vazio e erro.
+ */
 import { Link } from "react-router-dom";
 import { Heart, ShoppingBag } from "lucide-react";
 import type { Product } from "@/lib/types";

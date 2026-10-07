@@ -1,3 +1,10 @@
+/**
+ * Sacola lateral.
+ * - Lista itens com imagem, opções, quantidade e preço.
+ * - Barra de progresso para frete grátis.
+ * - Campo de cupom e cálculo de frete por CEP (valores calculados pelo servidor via /api/cart/quote).
+ * - Resumo (subtotal, desconto, frete, total) e botão Finalizar compra.
+ */
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Minus, Plus, ShoppingBag, Tag, Trash2, Truck } from "lucide-react";

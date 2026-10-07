@@ -1,3 +1,13 @@
+# Rotas do catálogo.
+# - GET  /api/categories                 -> lista as categorias em ordem.
+# - GET  /api/products                   -> lista produtos com filtros: q (busca por texto), categoria,
+#                                           selo (mais-vendido/novo/oferta), faixa de preço e ordenação.
+#                                           Usa um pipeline do Mongo que calcula o 'preço efetivo'
+#                                           (promocional se existir, senão o normal) para filtrar/ordenar.
+# - GET  /api/products/{slug}            -> detalhes de um produto (404 se não existir).
+# - GET  /api/products/{slug}/related    -> até 4 produtos das mesmas categorias, mais vendidos primeiro.
+# - GET  /api/products/{slug}/reviews    -> avaliações do produto, mais recentes primeiro.
+# - POST /api/products/{slug}/reviews    -> cria avaliação e recalcula a nota média do produto.
 import re
 from typing import Optional
 

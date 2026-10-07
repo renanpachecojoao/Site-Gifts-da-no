@@ -1,3 +1,6 @@
+/**
+ * Página inicial: junta todas as seções na ordem em que aparecem.
+ */
 import { Hero } from "@/components/home/Hero";
 import { BestSellers, CategoriesSection } from "@/components/home/CatalogSections";
 import { HowItWorks, OccasionsSection, PersonalizeSection } from "@/components/home/StorySections";
